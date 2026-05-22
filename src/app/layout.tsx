@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import "./globals.css";
 import LenisProvider from "@/components/LenisProvider";
 import { TransitionProvider } from "@/components/TransitionProvider";
@@ -8,7 +8,14 @@ export const metadata: Metadata = {
   description: "I create living, breathing websites for brands that want to be felt, not just seen.",
   keywords: ["Web Design", "Creative Development", "Next.js", "Tailwind CSS", "Brand Experience"],
   authors: [{ name: "Hiren Ahlawat" }],
-  viewport: "width=device-width, initial-scale=1.0",
+  verification: {
+    google: "IjecYNWDim7Ue0gt3r1hFh0D9eeB_0geBrbyWcApysY",
+  },
+};
+
+export const viewport: Viewport = {
+  width: "device-width",
+  initialScale: 1.0,
 };
 
 export default function RootLayout({
