@@ -1,7 +1,7 @@
 import type { MetadataRoute } from "next";
 
 export default function sitemap(): MetadataRoute.Sitemap {
-  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://frenix.ai";
+  const baseUrl = process.env.NEXT_PUBLIC_SITE_URL || "https://www.hirenah.me";
 
   return [
     {
